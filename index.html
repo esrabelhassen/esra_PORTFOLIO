@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('da51bef0-fbf5-4506-b048-ea5b80062788.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: -1;
+        }
+        .photo-section {
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            background: url('9AB28865-CDBD-4CA2-9B1B-3B8823D7C2B8.jpeg') no-repeat center 30%;
+            background-size: cover;
+            position: relative;
+        }
+        .photo-section .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #000000; /* Tomato color */
+        }
+        .nav-left a {
+            margin-right: auto;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-right {
+            display: flex;
+        }
+        .section {
+            padding: 3em 1em; /* Adjusted padding for sections */
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.5);
+            margin: 2em 0; /* Adjusted margin for sections */
+            border-radius: 10px;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+            animation: slideIn 1s ease-in-out;
+        }
+        .skill {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1em;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInSkill 6s infinite;
+        }
+        .skill i {
+            display: block;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 2em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInSkill {
+            0%, 100% { opacity: 0; }
+            10%, 90% { opacity: 1; }
+        }
+        .skills .skill:nth-child(1) { animation-delay: 0s; }
+        .skills .skill:nth-child(2) { animation-delay: 1s; }
+        .skills .skill:nth-child(3) { animation-delay: 2s; }
+        .skills .skill:nth-child(4) { animation-delay: 3s; }
+        .skills .skill:nth-child(5) { animation-delay: 4s; }
+        .skills .skill:nth-child(6) { animation-delay: 5s; }
+        .email-link {
+        color: #000000;
+        transition: color 0.3s ease; /* Smooth color transition */
+    }
+    .email-link:hover {
+        color: #eecb6c; /* Change to desired hover color */
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#section1">Esra Belhassen</a>
+        </div>
+        <div class="nav-right">
+            <a href="#section2">About</a>
+            <a href="#section3">Portfolio</a>
+        </div>
+    </nav>
+
+    <div class="photo-section">
+        <div class="hero-text">Welcome to My Portfolio</div>
+    </div>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                Python
+            </div>
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                HTML/CSS
+            </div>
+            <div class="skill">
+                <i class="fas fa-brain"></i>
+                Machine Learning Libraries
+            </div>
+            <div class="skill">
+                <i class="fas fa-chart-line"></i>
+                Data Analysis
+            </div>
+            <div class="skill">
+                <i class="fas fa-robot"></i>
+                TensorFlow
+            </div>
+        </div>
+    </section>
+    <title >Esra Belhassen</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('da51bef0-fbf5-4506-b048-ea5b80062788.png') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+        section {
+            padding: 2em;
+            margin: 2em 0;
+            position: relative;
+            z-index: 1;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: -1;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2em;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .profile-container:hover {
+            transform: scale(1.05);
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            margin-right: 2em;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-info {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .profile-info li {
+            margin-bottom: 0.5em;
+        }
+        .link {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1em;
+            transition: color 0.3s;
+        }
+        .link:hover {
+            color: #eecb6c; /* Tomato color */
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: black;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="section1">
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="C1643E43-EFD4-49C0-8116-C6EC0A0F51AA.jpg" alt="Profile Photo">
+            </div>
+            <p class="profile-info">
+                Hi, I am Esra Belhassen! <br><br>
+                I am a passionate machine learning enthusiast and computer science student, <br>
+                exploring the intersection of technology and data.<br>
+                This website showcases my portfolio and various projects in machine learning.<br>
+                All insights and opinions expressed here are my own.
+            </p>
+        </div>
+    </section>
+    <section>
+        <h3>My Projects</h3>
+    <ul>
+        <li> <a href="#" class="link" onclick="openModal('Bulldozers price prediction')">Bulldozers price prediction</a> </li>
+        <li> <a href="#" class="link" onclick="openModal('Heart disease classification')">Heart disease classification</a> </li>
+        <li> <a href="#" class="link" onclick="openModal('Loan amount predictions')">Loan amount predictions</a> </li>
+        <li> <a href="#" class="link" onclick="openModal('Movie Recommendation (NLP)')">Movie Recommendation (NLP)</a> </li>
+        <li> <a href="#" class="link" onclick="openModal('Cold Covid classification')">Cold Covid classification</a> </li>
+        <li> <a href="#" class="link" onclick="openModal('Flu Allergy classification')">Flu Allergy classification</a> </li>
+        <li> <a href="#" class="link" onclick="openModal('Diabetes classification')">Diabetes classification</a> </li>
+    </ul>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription">Project details will be displayed here.</p>
+            <a id="portfolioLink" href="#portfolio" class="link" style="display: inline-block; margin-top: 1em; color: #eecb6c;">See details in portfolio</a>
+        </div>
+    </div>
+    
+    <script>
+        const projectDescriptions = {
+            'Bulldozers price prediction': 'This project involves predicting the prices of bulldozers using machine learning techniques.',
+            'Heart disease classification': 'This project focuses on predicting heart disease.',
+            'Loan amount predictions': 'This project predicts loan amounts based on historical data.',
+            'Movie Recommendation (NLP)': 'This project uses Natural Language Processing (NLP) to recommend movies based on user preferences.',
+            'Cold Covid classification': 'This project classifies whether a person has a cold or Covid-19 based on symptoms.',
+            'Flu Allergy classification': 'This project classifies whether a person has the flu or an allergy based on symptoms.',
+            'Diabetes classification': 'This project classifies the presence of diabetes using machine learning techniques.'
+        };
+    
+        function openModal(projectTitle) {
+            document.getElementById('modalTitle').innerText = projectTitle;
+            document.getElementById('modalDescription').innerText = projectDescriptions[projectTitle] || 'Details about this project will be added here.';
+            document.getElementById('portfolioLink').href = '#portfolio';
+            document.getElementById('myModal').style.display = "block";
+        }
+    
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+    
+        document.getElementById('portfolioLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+            closeModal();
+        });
+    </script>
+</body>
+</html>
+    <title>About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('da51bef0-fbf5-4506-b048-ea5b80062788.png') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: -1;
+        }
+        header {
+            text-align: center;
+            padding: 2em;
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        section {
+            padding: 2em;
+            margin: 2em 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .certifications-link {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1em;
+        }
+        .certifications-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About</h1>
+    </header>
+
+    <section id="section2">
+        <h2>About Me</h2>
+        <p>
+            I am an enthusiastic IT and computer science student with a strong passion for machine learning and data analysis. As a self-taught learner, I've completed several online courses in data science and Python, enabling me to tackle various programming tasks effectively. Currently, I am focused on developing machine learning models for health diagnostics. With a commitment to continuous learning and a detail-oriented approach, I thrive in coding projects and am always eager to expand my knowledge in the field.
+        </p>
+    </section>
+
+    <section>
+        <h2>About This Website</h2>
+        <p>
+            This website hosts my projects, where I share ML code, competitive ML tricks. All opinions published here are my own. The website includes different sections featuring my work
+        </p>
+        <a href="certif.html" class="certifications-link">My Certifications</a>
+    </section>
+</body>
+</html>
+<title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('da51bef0-fbf5-4506-b048-ea5b80062788.png') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: -1;
+        }
+        header {
+            text-align: center;
+            padding: 2em;
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .description {
+            padding: 2em;
+            margin: 2em 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            font-size: 1.2em;
+            line-height: 1.6;
+            transition: transform 0.3s;
+        }
+        .description:hover {
+            transform: scale(1.05);
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2em;
+            padding: 2em;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+            position: relative;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 1em;
+        }
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .card-content p {
+            font-size: 1em;
+            margin: 0.5em 0;
+        }
+        .card-content a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1em;
+            font-size: 1.2em;
+        }
+        .card-content a:hover {
+            text-decoration: underline;
+        }
+        .github-icon {
+            width: 2%; /* Reduced width */
+            height: 2%; /* Reduced height */
+            vertical-align: bottom;
+            margin-left: 1em;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="portfolio">
+        <h1>Portfolio</h1>
+    </header>
+
+    <section id="section3" class="description">
+        My portfolio showcases a diverse range of projects, including machine learning models for health diagnostics,  and web development using Flask . I’ve worked on real-world datasets to solve classification problems, and I am constantly exploring new technologies to enhance my skills. To explore more of my work and code, feel free to visit my GitHub page.
+    </section>
+
+    <section class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="bull.jpg" alt="Project 1">
+            <div class="card-content">
+                <h3>Bulldozers price prediction</h3>
+                <ul>
+                    <li>predict the future sale price of a bulldozer , given its characteristics and previous exemples of how much similiar bulldozers have been sold for</li>
+                </ul>
+                <a href="https://github.com/esrabelhassen/Bulldozers_price_prediction" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Repeat similar structure for other cards -->
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="heart.jpg" alt="Project 2">
+            <div class="card-content">
+                <h3>Heart disease classification</h3>
+                <ul>
+                    <li>Given clinical parameters about a patient , can we predict wether or not they have heart disease</li>
+                </ul>
+                <a href="https://github.com/esrabelhassen/heart_disease_classification" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="loan.jpg" alt="Project 3">
+            <div class="card-content">
+                <h3>Loan amount predictions</h3>
+                <ul>
+                    <li>In this project, I built a model that predicts future loan amounts, bringing data-driven insights to financial decision-making</li>
+                </ul>
+                <a href="https://github.com/esrabelhassen/LOAN_amount_predictions" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="movie.jpg" alt="Project 4">
+            <div class="card-content">
+                <h3>Movie Recommandation NLP</h3>
+                <ul>
+                    <li>This project leverages NLP to recommend movies and TV shows based on user input, such as favorite genres and previously watched titles, delivering personalized entertainment suggestions</li>
+                </ul>
+                <a href="https://github.com/esrabelhassen/movie_recomm" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="covid.jpg" alt="Project 5">
+            <div class="card-content">
+                <h3>Cold Covid classification</h3>
+                <ul>
+                    <li>Using real-world data, I trained a machine learning model that predicts whether someone has a cold or COVID</li>
+                </ul>
+                <a href="warn.html" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="fluu.jpg" alt="Project 6">
+            <div class="card-content">
+                <h3>Flu Allergy classification</h3>
+                <ul>
+                    <li>By working with real-world data, I built a machine learning model that accurately identifies whether a person has an allergy or the flu</li>
+                </ul>
+                <a href="warn.html" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="diab.jpg" alt="Project 7">
+            <div class="card-content">
+                <h3>Diabetes classification</h3>
+                <ul>
+                    <li>In this project, I trained a model to effectively classify individuals based on their health data to determine whether they have diabetes.</li>
+                </ul>
+                <a href="warn.html" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <i class="fab fa-github github-icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to <a href="mailto:belhassennesr@gmail.com" class="email-link">email me</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Esra Belhassen. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('da51bef0-fbf5-4506-b048-ea5b80062788.png') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency here */
+            z-index: -1;
+        }
+        header {
+            text-align: center;
+            padding: 2em;
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .certifications {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            margin: 2em 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .certification {
+            width: 300px;
+            height: 400px;
+            background-color: #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .certification:hover {
+            transform: scale(1.05);
+        }
+        .certification img {
+            width: 100%;
+            height: 100%;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Certifications</h1>
+    </header>
+
+    <section class="certifications">
+        <div class="certification">
+            <img src="udemy_certif.jpg" alt="Certification 1">
+        </div>
+        <div class="certification">
+            <img src="195DED60-51DB-451C-8D21-9D4093D3558E.jpeg" alt="Certification 2">
+        </div>
+    </section>
+</body>
+</html>
